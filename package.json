@@ -4,6 +4,9 @@
 	"description": "Writing Helper",
 	"main": "bot.js",
 	"author": "Aimee P",
+	"scripts": {
+    "start": "node app.js"
+  }, 
 	"dependencies": {
 		"discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
 		"discord.js": "^13.8.1",
