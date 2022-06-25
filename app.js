@@ -30,7 +30,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				to: channelID,
 				message: 'pong!'
 			});
-			// Just add any case commands if you want to..
+			// /
 		}
 	}
 });
