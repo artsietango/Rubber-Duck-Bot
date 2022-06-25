@@ -81,6 +81,29 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				to: channelID,
 				message: String(prompt)
 			});
+			break;
+			case 'problem':
+			if (cmd.length == 7) {
+				bot.sendMessage({
+					to: channelID,
+					message: "proceed with '!problem' by typing '!problem *problem here*'"
+				});
+			} else if (cmd.length > 7) {
+				const quack_array = [
+				"quack",
+				"quack quack",
+				"*fluttering feather noises*",
+				"*gentle swimming sounds*",
+				"*looks at you intelligently*",
+				"*drinking noises*",
+				"quackquackquackquackquack",
+				"peep peep!",
+				"*duck chatters in agreement*",
+				"squeak squack!",
+				"*whistling noises*",
+				"*the duck rummages in your pockets and hands for food",
+			];
+			var quack = quack_array[number];
 		}
 	}
 });
