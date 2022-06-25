@@ -90,21 +90,27 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 					message: "proceed with `!problem` by typing `!problem *problem here*`"
 				});
 			} else if (args.length > 1) {
+				console.log("test");
 				const quack_array = [
-				"quack",
-				"quack quack",
-				"*fluttering feather noises*",
-				"*gentle swimming sounds*",
-				"*looks at you intelligently*",
-				"*drinking noises*",
-				"quackquackquackquackquack",
-				"peep peep!",
-				"*duck chatters in agreement*",
-				"squeak squack!",
-				"*whistling noises*",
-				"*the duck rummages in your pockets and hands for food",
-			];
-			var quack = quack_array[number];
+					"quack",
+					"quack quack",
+					"*fluttering feather noises*",
+					"*gentle swimming sounds*",
+					"*looks at you intelligently*",
+					"*drinking noises*",
+					"quackquackquackquackquack",
+					"peep peep!",
+					"*duck chatters in agreement*",
+					"squeak squack!",
+					"*whistling noises*",
+					"*the duck rummages in your pockets and hands for food",
+				];
+				var number2 = Math.floor(Math.random() * quack_array.length);
+				var quack = quack_array[number2];
+				bot.sendMessage ({
+					to: channelID,
+					message: String(quack)
+				});
 			}
 		}
 	}
