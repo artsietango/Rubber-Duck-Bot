@@ -86,7 +86,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			if (cmd.length == 7) {
 				bot.sendMessage({
 					to: channelID,
-					message: "proceed with '!problem' by typing '!problem *problem here*'"
+					message: "proceed with `!problem` by typing `!problem *problem here*`"
 				});
 			} else if (cmd.length > 7) {
 				const quack_array = [
