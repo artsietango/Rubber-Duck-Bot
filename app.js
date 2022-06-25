@@ -19,11 +19,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 	// Our bot needs to know if it will execute a command
 	// It will listen for messages that will start with '!'
 	if (message.substring(0,1) == '!') {
-		const prompt_array = {
+		const prompt_array = [
 				"here is the first prompt",
 				"here is the second prompt",
 				"here is the third prompt"
-			};
+			];
 		var number = Math.floor(Math.random() * 2);
 		var prompt = prompt_array[number];
 		var args = message.substring(1).split(' ');
