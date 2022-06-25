@@ -36,11 +36,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				to: channelID,
 				message: 'pong!'
 			});
+			break;
 			case '!prompt':
 			bot.sendMessage({
 				to: channelID,
 				message: prompt
 			});
+			break;
 		}
 	}
 });
