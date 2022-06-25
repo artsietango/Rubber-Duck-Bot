@@ -40,9 +40,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			case '!prompt':
 			bot.sendMessage({
 				to: channelID,
-				message: prompt
+				message: String(prompt)
 			});
-			break;
 		}
 	}
 });
