@@ -37,7 +37,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				message: 'pong!'
 			});
 			break;
-			case '!prompt':
+			case 'prompt':
 			bot.sendMessage({
 				to: channelID,
 				message: String(prompt)
