@@ -67,7 +67,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		var prompt = prompt_array[number];
 		var args = message.substring(1).split(' ');
 		var cmd = args[0];
-		args = args.splice(1);
+		//args = args.splice(1);
 		switch(cmd) {
 			// !ping
 			case 'ping':
