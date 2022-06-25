@@ -104,6 +104,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				"*the duck rummages in your pockets and hands for food",
 			];
 			var quack = quack_array[number];
+			}
 		}
 	}
 });
