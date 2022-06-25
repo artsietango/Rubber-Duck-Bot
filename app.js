@@ -5,7 +5,8 @@ const auth = process.env.token;
 console.log(auth);
 let key = { "token": auth};
 console.log(key);
-
+var number = Math.floor(Math.random() * 2)
+var prompt = prompt_array[number]
 // configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(new logger.transports.Console, {
@@ -30,7 +31,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				to: channelID,
 				message: 'pong!'
 			});
-			// /
+			switch (cmd)
+			// !prompt
+			case 'prompt':
+			bot.sendMessage ({
+				to: channelID,
+				message:'A long-held secret is revealed, causing guilt about what your characters did long ago.'
+			});
 		}
 	}
 });
