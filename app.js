@@ -83,12 +83,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			});
 			break;
 			case 'problem':
-			if (cmd.length == 7) {
+			if (args.length == 1) {
 				bot.sendMessage({
 					to: channelID,
 					message: "proceed with `!problem` by typing `!problem *problem here*`"
 				});
-			} else if (cmd.length > 7) {
+			} else if (args.length > 1) {
 				const quack_array = [
 				"quack",
 				"quack quack",
