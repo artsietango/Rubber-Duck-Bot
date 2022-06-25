@@ -24,7 +24,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				"here is the second prompt",
 				"here is the third prompt"
 			];
-		var number = Math.floor(Math.random() * 2);
+		var number = Math.floor(Math.random() * 3);
 		var prompt = prompt_array[number];
 		var args = message.substring(1).split(' ');
 		var cmd = args[0];
